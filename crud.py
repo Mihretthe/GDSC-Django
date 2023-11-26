@@ -58,6 +58,7 @@ def menu():
     print("3. Display All Students")
     print("4. Delete Student")
     print("5. Update Student")
+    print("6. Exit")
     n = input("Choose:")
     if n == "1":
         addStudents()
@@ -69,6 +70,8 @@ def menu():
         delete()
     elif n == "5":
         update()
+    elif n == "6":
+        exit()
     else:
         y = input("Choose the correct number. If you want to continue press y else any: ")
         y = y.lower()
@@ -77,6 +80,7 @@ def menu():
         else:
             exit()
     menu()
+createTable("students")
 menu()
 
 
