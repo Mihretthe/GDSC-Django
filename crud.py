@@ -42,10 +42,11 @@ def search():
 
 def update():
     id = input("Enter the Id of the Student You want to update:")
+    name = input("Enter name:")
     age = input('Enter age:')
     grade = input('Enter Grade:')
-    sql = "Update students Set age = ?, grade = ? where id = ? "
-    cursor.execute(sql, (age, grade, id))
+    sql = "Update students Set name = ?, age = ?, grade = ? where id = ? "
+    cursor.execute(sql, (name, age, grade, id))
 
 def delete():
     id = input("Enter the Id you want to delete:")
