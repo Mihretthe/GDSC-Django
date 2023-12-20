@@ -36,5 +36,5 @@ class Book:
         print(f"Book ISBN: {self.ISBN}")
         print(f"Book Availability: {self.availability_status}")
 
-    def updateStatus(self, availability_status):
-        self.availability_status = availability_status
+    # def updateStatus(self, availability_status):
+    #     self.availability_status = availability_status
